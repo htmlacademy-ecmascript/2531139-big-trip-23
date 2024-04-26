@@ -6,10 +6,10 @@ module.exports = {
   entry: './src/main.js',
   output: {
     filename: 'bundle.[contenthash].js',
-    path: path.resolve(__dirname, 'build'), 
-    clean: true, 
+    path: path.resolve(__dirname, 'build'),
+    clean: true,
   },
-  devtool: 'source-map', 
+  devtool: 'source-map',
   plugins: [
     new HtmlPlugin({
       template: 'public/index.html',
@@ -24,7 +24,7 @@ module.exports = {
         },
       ],
     }),
-  ],
+  ], 
   module: {
     rules: [
       {
