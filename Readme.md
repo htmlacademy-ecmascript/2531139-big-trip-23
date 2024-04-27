@@ -1,7 +1,7 @@
 # Проект «Большое путешествие»
 
 * Студент: [Алексей Малыщик](https://up.htmlacademy.ru/ecmascript/23/user/2531139).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Именин](https://htmlacademy.ru/profile/aimenin)
 
 ---
 
