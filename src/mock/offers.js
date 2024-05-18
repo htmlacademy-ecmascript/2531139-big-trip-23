@@ -89,6 +89,26 @@ const mockOffers = [
       }
     ]
   },
+  {
+    type: 'bus',
+    offers: [
+      {
+        id: '10',
+        title: 'Choose seats',
+        price: 50
+      }
+    ]
+  },
+  {
+    type: 'bus',
+    offers: [
+      {
+        id: '11',
+        title: 'Drive faster',
+        price: 1000
+      }
+    ]
+  }
 ];
 
 export function getMockOffers(){

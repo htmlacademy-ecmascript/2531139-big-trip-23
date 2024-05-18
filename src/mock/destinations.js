@@ -12,7 +12,7 @@ const mockDestinations = [
   },
   {
     id: '2',
-    description: 'Parish bla bla bla',
+    description: 'Paris, is a beautiful city, a true asian pearl, with crowded streets.',
     name: 'Parish',
     pictures: [
       {
@@ -23,7 +23,7 @@ const mockDestinations = [
   },
   {
     id: '3',
-    description: 'Moscow bla bla bla',
+    description: 'Moscow, is a beautiful city, a true asian pearl, with crowded streets.',
     name: 'Moscow',
     pictures: [
       {
@@ -34,7 +34,7 @@ const mockDestinations = [
   },
   {
     id: '4',
-    description: 'Seul bla bla bla',
+    description: 'Seul, is a beautiful city, a true asian pearl, with crowded streets.',
     name: 'Seul',
     pictures: [
       {
