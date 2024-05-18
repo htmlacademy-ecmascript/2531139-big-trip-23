@@ -1,7 +1,7 @@
 import {createElement} from '../render.js';
 
 function creatOffersTemplate (offers){
-  const {title, price} =  offers;
+  const {title, price} = offers;
   return `<div class="event__offer-selector">
   <input class="event__offer-checkbox  visually-hidden" id="event-offer-luggage-1" type="checkbox" name="event-offer-luggage" checked>
   <label class="event__offer-label" for="event-offer-luggage-1">
@@ -13,13 +13,11 @@ function creatOffersTemplate (offers){
 }
 
 const createFormEditTemplate = (points, destinations, offers) =>{
-  const {type, basePrice, dateFrom, dateTo, destination: destinationId, isFavorite , offers:offerIds} = points;
+  const {type, basePrice, destination: destinationId, offers:offerIds} = points;
   const destinationName = destinations.find((destination) => destination.id === destinationId).name;
   const destinationDescription = destinations.find((destination) => destination.id === destinationId).description;
   const possibleOffers = offers.find((offersType) => offersType.type === type).offers;
-  const pointOffers = possibleOffers.filter((possibleOffer) => offerIds.includes(possibleOffer.id))
-  console.log(possibleOffers)
-  console.log(pointOffers)
+  const pointOffers = possibleOffers.filter((possibleOffer) => offerIds.includes(possibleOffer.id));
 
   return `
 <form class="event event--edit" action="#" method="post">
@@ -132,7 +130,8 @@ const createFormEditTemplate = (points, destinations, offers) =>{
   </section>
 </section>
 </form>
-`};
+`;
+};
 
 export default class FormEditView {
   constructor({points, destinations, offers}){
@@ -140,6 +139,7 @@ export default class FormEditView {
     this.destinations = destinations;
     this.offers = offers;
   }
+
   getTemplate(){
     return createFormEditTemplate(this.points, this.destinations, this.offers);
   }

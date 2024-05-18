@@ -1,6 +1,6 @@
-import { getMockPoints } from "../mock/points";
-import { getMockDestinations } from "../mock/destinations";
-import { getMockOffers } from "../mock/offers";
+import { getMockPoints } from '../mock/points';
+import { getMockDestinations } from '../mock/destinations';
+import { getMockOffers } from '../mock/offers';
 
 export const EVENT_COUNT = 3;
 
@@ -18,12 +18,14 @@ export default class TripModel {
   }
 
   getPoints(){
-    return this.points
+    return this.points;
   }
+
   getDestinations(){
-    return this.destinations
+    return this.destinations;
   }
+
   getOffers(){
-    return this.offers
+    return this.offers;
   }
 }

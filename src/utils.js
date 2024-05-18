@@ -1,11 +1,11 @@
-import dayjs from "dayjs";
+import dayjs from 'dayjs';
 
 function getRandomArrayElement(items) {
   return items[Math.floor(Math.random() * items.length)];
 }
 
 function humanizeDate(date, format){
-  return  dayjs(date).format(format)
+  return dayjs(date).format(format);
 }
 
 function getDateDif(dateFrom, dateTo) {

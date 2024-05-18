@@ -2,7 +2,7 @@ import { createElement } from '../render.js';
 import { humanizeDate, getDateDif } from '../utils.js';
 
 function creatOffersTemplate (offers){
-  const {title, price} =  offers;
+  const {title, price} = offers;
   return `<li class="event__offer">
   <span class="event__offer-title">${title}</span>
   &plus;&euro;&nbsp;
@@ -16,7 +16,7 @@ const createEventItemTemplate = (points, destinations, offers) => {
   const isFavoriteEvent = isFavorite ? '--active' : '';
   const destinationName = destinations.find((destination) => destination.id === destinationId).name;
   const possibleOffers = offers.find((offersType) => offersType.type === type).offers;
-  const pointOffers = possibleOffers.filter((possibleOffer) => offerIds.includes(possibleOffer.id))
+  const pointOffers = possibleOffers.filter((possibleOffer) => offerIds.includes(possibleOffer.id));
 
   return `<li class="trip-events__item">
   <div class="event">
@@ -50,7 +50,7 @@ const createEventItemTemplate = (points, destinations, offers) => {
       <span class="visually-hidden">Open event</span>
     </button>
   </div>
-  </li>`
+  </li>`;
 };
 
 export default class EventItemView {
@@ -59,6 +59,7 @@ export default class EventItemView {
     this.destinations = destinations;
     this.offers = offers;
   }
+
   getTemplate(){
     return createEventItemTemplate(this.points, this.destinations, this.offers);
   }
